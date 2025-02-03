@@ -30,22 +30,22 @@ body {
 
 header {
     text-align: center;
-    margin-bottom: 20px;
+    margin-bottom: 10px;
 }
 
 .logo {
-    width: 150px;
+    width: 120px;
     margin: 0 auto 10px;
 }
 
 h1 {
-    font-size: 1.8rem;
-    margin-bottom: 10px;
+    font-size: 1.5rem;
+    margin-bottom: 5px;
 }
 
 p {
-    font-size: 1rem;
-    margin-bottom: 20px;
+    font-size: 0.9rem;
+    margin-bottom: 10px;
 }
 
 .survey-container {
@@ -55,23 +55,23 @@ p {
 
 iframe {
     width: 100%;
-    height: 100vh;
+    height: 75vh; /* Adjust height to fit the survey properly */
     border: none;
     border-radius: 8px;
 }
 
 @media (max-width: 768px) {
     h1 {
-        font-size: 1.5rem;
+        font-size: 1.3rem;
     }
 
     iframe {
-        height: 90vh;
+        height: 70vh;
     }
 }
 
 @media (max-width: 480px) {
     iframe {
-        height: 85vh;
+        height: 65vh;
     }
 }
