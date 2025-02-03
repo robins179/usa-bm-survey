@@ -14,22 +14,21 @@ body {
     height: 100vh;
     color: white;
     text-align: center;
-}
-
-.container {
-    display: flex;
     flex-direction: column;
-    height: 100%;
-    width: 90%;
-    max-width: 600px;
-    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
-    background: rgba(0, 0, 0, 0.6);
-    border-radius: 12px;
     overflow: hidden;
 }
 
-.header {
+.container {
+    background: rgba(0, 0, 0, 0.6);
+    border-radius: 12px;
     padding: 20px;
+    width: 90%;
+    max-width: 900px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+    height: 90vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }
 
 .logo {
@@ -49,9 +48,7 @@ p {
 
 .survey-container {
     flex-grow: 1;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    margin-top: 20px;
 }
 
 iframe {
@@ -64,5 +61,11 @@ iframe {
 @media (max-width: 768px) {
     h1 {
         font-size: 1.5rem;
+    }
+}
+
+@media (max-width: 480px) {
+    iframe {
+        height: 90%;
     }
 }
