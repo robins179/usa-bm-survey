@@ -17,56 +17,46 @@ body {
     flex-direction: column;
 }
 
-.container {
-    background: rgba(0, 0, 0, 0.6);
-    border-radius: 12px;
-    padding: 20px;
-    width: 90%;
-    max-width: 900px;
-    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
-    display: flex;
-    flex-direction: column;
-}
-
+/* Reduce the size of the top section */
 header {
     text-align: center;
-    margin-bottom: 10px;
+    margin-bottom: 10px; /* Reduce space between header and survey */
 }
 
+/* Decrease logo size */
 .logo {
-    width: 120px;
-    margin: 0 auto 10px;
+    width: 100px; /* Adjust the width */
+    margin: 0 auto 5px;
 }
 
+/* Reduce font sizes for title and subtitle */
 h1 {
-    font-size: 1.5rem;
+    font-size: 1.4rem; /* Smaller font size */
     margin-bottom: 5px;
 }
 
 p {
-    font-size: 0.9rem;
-    margin-bottom: 10px;
+    font-size: 0.8rem;
+    margin-bottom: 5px;
 }
 
+/* Ensure the survey takes up more vertical space */
 .survey-container {
     flex-grow: 1;
+    height: 80vh; /* Adjust this to increase the space for the survey */
     overflow: hidden;
 }
 
-iframe {
+/* Add height control to the embedded survey */
+iframe, .survey-container script {
     width: 100%;
-    height: 75vh; /* Adjust height to fit the survey properly */
+    height: 100%;
     border: none;
-    border-radius: 8px;
 }
 
 @media (max-width: 768px) {
     h1 {
-        font-size: 1.3rem;
-    }
-
-    iframe {
-        height: 70vh;
+        font-size: 1.2rem;
     }
 }
 
